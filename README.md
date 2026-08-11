@@ -25,6 +25,7 @@ workflows for the issues area.
 | `grl-issues` | GitHub issue registry | Keeps a dated local registry of open issues with one work state each and the decisions taken on the backlog, syncs incrementally, and opens and closes work sessions. It reads GitHub only. |
 | `grl-issue-readiness` | Issue readiness check | Applies seven criteria with citations, detects who already asked to wait, and publishes a single recognizable clarification comment after explicit confirmation. |
 | `grl-issue-verify` | Issue closing verification | Maps every acceptance criterion onto the diff with file-and-line evidence, flags work no criterion asked for, and authorizes closing only when every criterion is covered. |
+| `grl-issue-build` | Issue to implementation | Checks that the issue carries a written explanation — expected behavior, acceptance criterion, entry point, exclusions — builds a brief where every line cites its source, and hands the work to `bmad-build` only after an explicit authorization. |
 | `grl-automation` | Controlled automation | Routes work from read-only checks through dry-run to observable execution, with explicit approvals and rollback. |
 
 ## Installation

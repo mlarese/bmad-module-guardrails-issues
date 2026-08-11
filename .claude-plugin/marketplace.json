@@ -1,12 +1,12 @@
 {
   "name": "guardrails-issues",
   "owner": "mlarese",
-  "description": "Guardrails Issues: backlog delle issue GitHub: registro locale datato, stato di lavorazione, decisioni, sessioni di lavoro, verifica di chiarezza prima dello sviluppo e verifica di risoluzione prima della chiusura.",
+  "description": "Guardrails Issues: backlog delle issue GitHub: registro locale datato, stato di lavorazione, decisioni, sessioni di lavoro, verifica di chiarezza prima dello sviluppo, passaggio a bmad-build solo con la spiegazione scritta nella issue, e verifica di risoluzione prima della chiusura.",
   "plugins": [
     {
       "name": "gri",
       "source": "./src",
-      "description": "Una figura di presidio sul backlog delle issue GitHub, più i workflow che tengono il registro locale datato delle issue aperte, assegnano a ciascuna uno stato di lavorazione, aprono e chiudono una sessione di lavoro, verificano se una issue è chiara abbastanza da essere sviluppata e, a lavoro finito, se il codice scritto copre ogni criterio di accettazione prima della chiusura. Riconosce chi ha già chiesto di aspettare, non inventa il requisito mancante e pubblica un solo commento di chiarimento, sempre dopo conferma.",
+      "description": "Una figura di presidio sul backlog delle issue GitHub, più i workflow che tengono il registro locale datato delle issue aperte, assegnano a ciascuna uno stato di lavorazione, aprono e chiudono una sessione di lavoro, verificano se una issue è chiara abbastanza da essere sviluppata, portano la spiegazione scritta nei commenti fino a `bmad-build` e, a lavoro finito, controllano se il codice copre ogni criterio di accettazione prima della chiusura. Riconosce chi ha già chiesto di aspettare, non inventa il requisito mancante e pubblica un solo commento di chiarimento, sempre dopo conferma.",
       "version": "1.34.1",
       "author": "mlarese",
       "homepage": "https://github.com/mlarese/bmad-module-guardrails-issues",
@@ -19,6 +19,7 @@
         "src/skills/grl-issues",
         "src/skills/grl-issue-readiness",
         "src/skills/grl-issue-verify",
+        "src/skills/grl-issue-build",
         "src/skills/grl-automation"
       ]
     }
