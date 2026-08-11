@@ -1,0 +1,24 @@
+# Installazione BMad locale e skill di terze parti.
+# La barra iniziale limita la regola alla radice: le fixture degli eval vivono in
+# `src/skills/*/evals/_bmad/` e devono restare versionate.
+/_bmad/
+/_bmad-output/
+.claude/
+.agents/
+.opencode/
+.cline/
+
+# Log di build e referti di analisi del builder
+**/.memlog.md
+**/.analysis/
+
+# Report e cache locali degli eval runner: mai versionare
+**/eval-runs/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# macOS
+.DS_Store
