@@ -14,6 +14,7 @@ workflows for the issues area.
 
 | Agent | Role | Skill | Focus |
 | ----- | ---- | ----- | ----- |
+| 🚧 Vito | Blocking Points Analyst | `grl-agent-blockers` | Mandatory paths, state machines, gates and approvals, hardcoded rigidity, runtime stalls, and repo or pipeline gates. |
 | 📋 Tito | Issue Triage & Backlog Steward | `grl-agent-issues` | GitHub issues, backlog and triage, work states, readiness before development, hold signals, recorded decisions, duplicates, dependencies, and a code survey before the verdict. |
 
 ## Skills and workflows
@@ -47,7 +48,7 @@ installed modules still share one profile.
 
 ## Using it with the bundle
 
-This module installs skills with **the same names** as the `grl` bundle — `grl-agent-issues`
+This module installs skills with **the same names** as the `grl` bundle — `grl-agent-blockers`
 is identical in both. Do not install the full bundle and thematic modules in the same project:
 choose the complete bundle, or only the thematic modules you need.
 

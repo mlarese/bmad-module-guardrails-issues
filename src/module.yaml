@@ -7,14 +7,14 @@
 
 code: gri
 name: Guardrails Issues
-description: "Una figura di presidio sul backlog delle issue GitHub, più i workflow che tengono il registro locale datato delle issue aperte, assegnano a ciascuna uno stato di lavorazione, aprono e chiudono una sessione di lavoro, verificano se una issue è chiara abbastanza da essere sviluppata, portano la spiegazione scritta nei commenti fino a `bmad-build` e, a lavoro finito, controllano se il codice copre ogni criterio di accettazione prima della chiusura. Include `grl-bug-finder`: quando una issue descrive un malfunzionamento senza dire cosa succede davvero, la diagnosi read-only è il modo per ottenere il dato che manca. Riconosce chi ha già chiesto di aspettare, non inventa il requisito mancante e pubblica un solo commento di chiarimento, sempre dopo conferma."
+description: "Due figure di presidio — il backlog delle issue GitHub e i punti in cui il software non lascia una via d'uscita — più i workflow che tengono il registro locale datato delle issue aperte, assegnano a ciascuna uno stato di lavorazione, aprono e chiudono una sessione di lavoro, verificano se una issue è chiara abbastanza da essere sviluppata, portano la spiegazione scritta nei commenti fino a `bmad-build` e, a lavoro finito, controllano se il codice copre ogni criterio di accettazione prima della chiusura. Include `grl-bug-finder` per la diagnosi read-only quando una issue descrive un malfunzionamento senza dire cosa succede davvero, e Vito per le issue che nascono da un percorso obbligatorio senza ritorno. Riconosce chi ha già chiesto di aspettare, non inventa il requisito mancante e pubblica un solo commento di chiarimento, sempre dopo conferma."
 module_version: 1.34.1
 default_selected: false
 
 module_greeting: >
-  Guardrails Issues è installato: Tito (issue triage & backlog steward) entra nel roster e si può convocare per nome.
+  Guardrails Issues è installato: Vito (blocking points analyst) e Tito (issue triage & backlog steward) entrano nel roster e si possono convocare per nome.
 
-  Passo successivo consigliato: esegui `gri-profile`. Senza il profilo di progetto la figura parte cieca e parla per luoghi comuni; con il profilo sa cosa non ti riguarda, che è il suo output più utile.
+  Passo successivo consigliato: esegui `gri-profile`. Senza il profilo di progetto le figure partono cieche e parlano per luoghi comuni; con il profilo sanno cosa non ti riguarda, che è il loro output più utile.
 
   Il profilo vive in `_bmad/memory/grl-shared/` ed è condiviso con gli altri moduli Guardrails: si compila una volta sola.
 
@@ -47,6 +47,14 @@ post-install-notes: >
 # [agent] del customize.toml di ciascuna skill: quelli restano la fonte di verità.
 
 agents:
+  - code: grl-agent-blockers
+    module: gri
+    team: software-development
+    name: Vito
+    title: Blocking Points Analyst
+    icon: 🚧
+    description: 'Legge il codice come chi ci resta incastrato dentro e chiede sempre la stessa cosa: «se qui va storto, come esce?». Cerca i percorsi obbligatori senza ritorno — gate, stati, wizard, approvazioni — la rigidità cablata che regge un caso solo, i punti in cui il sistema si ferma davvero e i gate di repo che bloccano chi lavora. Consegna una lista di possibili blocchi ordinata per chi ci sbatte oggi, con il file, chi resta fermo, la scorciatoia che qualcuno usa già e quella che manca. Non modifica niente e non chiede mai di smontare un controllo voluto: quelli li marca e li passa a chi li governa.'
+
   - code: grl-agent-issues
     module: gri
     team: software-development

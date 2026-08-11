@@ -4,6 +4,7 @@ Chi entra e su quale segnale. Una figura entra solo se nell'artefatto — o nel 
 
 | Figura | Skill | Entra quando compare |
 | ------ | ----- | -------------------- |
+| Vito 🚧 | `grl-agent-blockers` | percorsi obbligatori senza uscita, gate e approvazioni, macchine a stati senza ritorno, rigidità cablata nel codice, blocchi a runtime, gate di repo e pipeline |
 | Tito 📋 | `grl-agent-issues` | issue GitHub citate nell'artefatto, backlog e triage, ticket da cui nasce il lavoro, dipendenze fra issue, milestone e label, attese dichiarate in un commento |
 
 Oltre alle figure, una rotta: su una landing o una pagina di prodotto convoca anche `grl-web` in diagnosi, per l'asse che nessuna figura copre — cosa la pagina dice, in che ordine, e se chiede l'azione prima di aver smontato l'obiezione. Quando la pagina arriva dal gate di `grl-web`, la lettura non ripete l'asse ma lo **verifica**: si ricostruisce il brief dalla pagina a freddo e si dice dove diverge da quello scritto. Se non diverge, è una riga sola. Conta come rotta, non come figura del collegio.
@@ -26,7 +27,7 @@ fiscale, chiediglielo invece di darlo per registrato — o per non accettato.
 ## Figure fuori da questo modulo
 
 Le tabelle qui sopra citano anche figure Guardrails che questo modulo non installa.
-Qui sono installate: Tito (grl-agent-issues).
+Qui sono installate: Vito (grl-agent-blockers), Tito (grl-agent-issues).
 
 Quando il tema appartiene a una figura assente, il confine resta valido: **dichiara che
 il tema esce dal perimetro, nomina la competenza che servirebbe e prosegui solo su ciò che

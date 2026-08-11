@@ -282,7 +282,7 @@ non la tabella del revisore.
 ## Figure fuori da questo modulo
 
 Le tabelle qui sopra citano anche figure Guardrails che questo modulo non installa.
-Qui sono installate: Tito (grl-agent-issues).
+Qui sono installate: Vito (grl-agent-blockers), Tito (grl-agent-issues).
 
 Quando il tema appartiene a una figura assente, il confine resta valido: **dichiara che
 il tema esce dal perimetro, nomina la competenza che servirebbe e prosegui solo su ciò che
