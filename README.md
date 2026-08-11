@@ -26,6 +26,7 @@ workflows for the issues area.
 | `grl-issue-readiness` | Issue readiness check | Applies seven criteria with citations, detects who already asked to wait, and publishes a single recognizable clarification comment after explicit confirmation. |
 | `grl-issue-verify` | Issue closing verification | Maps every acceptance criterion onto the diff with file-and-line evidence, flags work no criterion asked for, and authorizes closing only when every criterion is covered. |
 | `grl-issue-build` | Issue to implementation | Checks that the issue carries a written explanation — expected behavior, acceptance criterion, entry point, exclusions — builds a brief where every line cites its source, and hands the work to `bmad-build` only after an explicit authorization. |
+| `grl-bug-finder` | Bug and regression diagnosis | Builds a minimal reproduction, traces the failure path, separates evidence from hypotheses, and proposes a regression test without changing the artifact. |
 | `grl-automation` | Controlled automation | Routes work from read-only checks through dry-run to observable execution, with explicit approvals and rollback. |
 
 ## Installation
